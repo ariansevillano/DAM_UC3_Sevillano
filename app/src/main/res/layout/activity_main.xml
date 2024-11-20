@@ -126,31 +126,29 @@
             android:id="@+id/editTextOrigin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="0dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_background4"
             android:drawableLeft="@drawable/baseline_flight_takeoff_24"
             android:gravity="left"
+            android:hint="Origin"
+            android:inputType="text"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:hint="Origin"
-            android:inputType="text" />
+            android:paddingBottom="8dp" />
 
         <EditText
             android:id="@+id/editTextDestination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="0dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_background5"
             android:drawableLeft="@drawable/outline_flight_land_24"
             android:gravity="left"
+            android:hint="Destination"
+            android:inputType="text"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:hint="Destination"
-            android:inputType="text" />
+            android:paddingBottom="8dp" />
 
     </LinearLayout>
 
@@ -174,12 +172,12 @@
             android:id="@+id/editTextDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginTop="2dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="0dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/rounded_background6"
-            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
             android:focusable="false"
             android:gravity="left|center_vertical"
             android:hint="Select Date"
@@ -193,9 +191,9 @@
             android:id="@+id/spinnerOptions1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/rounded_background6"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
             android:paddingRight="16dp"
@@ -206,9 +204,10 @@
             android:id="@+id/spinnerOptions2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/rounded_background6"
+            android:dropDownSelector="@drawable/baseline_calendar_month_24"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
             android:paddingRight="16dp"
@@ -238,28 +237,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="423dp"
+        android:layout_width="410dp"
         android:layout_height="70dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@drawable/outline_home_24"
-            android:text="Home"
-            android:gravity="center"/>
+            android:drawableTop="@drawable/baseline_home_24"
+            android:gravity="center"
+            android:text="Home" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@drawable/baseline_circle_24"
+            android:drawableTop="@drawable/world_26"
             android:gravity="center"
             android:text="Book" />
 
@@ -286,7 +285,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@drawable/baseline_star_outline_24"
+            android:drawableTop="@drawable/baseline_stars_24"
             android:gravity="center"
             android:text="Latam Pass" />
     </LinearLayout>
